@@ -1,0 +1,13 @@
+@use "../utils/media" as *;
+
+.container {
+  padding-inline: 161px;
+
+  @include onTablet {
+    padding-inline: 61px;
+  }
+
+  @include onMobile {
+    padding-inline: 35px;
+  }
+}

@@ -1,0 +1,42 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+* {
+  transition: all 0.4s ease;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $grey-100;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+
+  @include flex-start;
+  justify-content: center;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,68 @@
+@use "../styles/utils/variables" as *;
+@use "../styles/utils/media.scss" as *;
+@use "../styles/utils/mixins.scss" as *;
+@use "../styles/utils/typography.scss" as *;
+
+.card {
+  border-radius: 8px;
+  padding: 32px;
+
+  &:nth-child(1) {
+    background: $purple-500;
+    color: $white;
+  }
+
+  &:nth-child(2) {
+    background: $grey-500;
+    color: $white;
+  }
+
+  &:nth-child(3) {
+    background: $white;
+    color: $grey-400;
+  }
+
+  &:nth-child(4) {
+    background: $white;
+    color: $grey-400;
+  }
+
+  &:nth-child(5) {
+    background: $dark-blue;
+    color: $white;
+  }
+
+  &__title {
+    @include text-preset-1;
+    margin-block-end: 16px;
+  }
+
+  &__text {
+    @include text-preset-3;
+  }
+
+  &__author {
+    margin-block-end: 16px;
+    @include flex-start;
+    gap: 16px;
+  }
+
+  &__image {
+    border-radius: 50%;
+
+    & img {
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    &:first-child {
+      font-weight: 500;
+      font-size: 13px;
+      margin-block-end: 4px;
+    }
+    &:last-child {
+      @include text-preset-4;
+    }
+  }
+}
