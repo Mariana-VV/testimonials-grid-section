@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "homepage": "https://mariana-vv.github.io/devjobs-web-app/",
+    "build": "npm run build",
+    "homepage": "https://mariana-vv.github.io/testimonials-grid-section/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
