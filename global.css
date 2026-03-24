@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   padding-inline: 161px;
 }
@@ -56,7 +57,7 @@ button {
   padding: 32px;
 }
 .card:nth-child(1) {
-  background: #733fc8;
+  background: url("../../“.png") #733fc8 right 15% top 0% no-repeat;
   color: #ffffff;
 }
 .card:nth-child(2) {
@@ -187,4 +188,4 @@ button {
   }
 }
 
-/*# sourceMappingURL=globals.css.map */
+/*# sourceMappingURL=global.css.map */
