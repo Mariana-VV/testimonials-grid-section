@@ -5,10 +5,10 @@
 
 .card {
   border-radius: 8px;
-  padding: 32px;
+  padding: 2rem;
 
   &:nth-child(1) {
-    background: url("background.png") $purple-500 right 15% top 0% no-repeat;
+    background: $purple-500;
     color: $white;
   }
 
@@ -23,35 +23,39 @@
   }
 
   &:nth-child(4) {
-    background: $white;
-    color: $grey-400;
-  }
-
-  &:nth-child(5) {
     background: $dark-blue;
     color: $white;
   }
 
+  &:nth-child(5) {
+    background: $white;
+    color: $grey-400;
+  }
+
   &__title {
     @include text-preset-1;
-    margin-block-end: 16px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-block-end: 1rem;
   }
 
   &__text {
     @include text-preset-3;
+    font-size: 0.8125rem;
   }
 
   &__author {
-    margin-block-end: 16px;
+    margin-block-end: 1rem;
     @include flex-start;
-    gap: 16px;
+    gap: 1rem;
   }
 
   &__image {
-    border-radius: 50%;
+    overflow: hidden;
 
     & img {
       border-radius: 50%;
+      object-fit: cover;
     }
   }
 
@@ -63,6 +67,15 @@
     }
     &:last-child {
       @include text-preset-4;
+    }
+  }
+}
+
+@include onTablet {
+  .card {
+    &:nth-child(1) {
+      background: url("background.png") $purple-500 right 15% top 0% no-repeat;
+      color: $white;
     }
   }
 }

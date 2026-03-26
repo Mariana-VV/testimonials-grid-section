@@ -1,23 +1,23 @@
 @mixin text-preset-1 {
   font-size: 20px;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 @mixin text-preset-2 {
   font-size: 13px;
   font-weight: 500;
-  line-height: 110%;
+  line-height: 1.1;
 }
 
 @mixin text-preset-3 {
   font-size: 13px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 1.4;
 }
 
 @mixin text-preset-4 {
   font-size: 11px;
   font-weight: 500;
-  line-height: 110%;
+  line-height: 1.1;
 }

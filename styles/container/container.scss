@@ -1,13 +1,15 @@
-@use "../utils/media" as *;
+@use "../utils/media.scss" as *;
 
 .container {
-  padding-inline: 161px;
+  max-width: 19rem;
+  margin: 0 auto;
+  padding-inline: 1rem;
 
   @include onTablet {
-    padding-inline: 61px;
+    min-width: 40rem;
   }
 
-  @include onMobile {
-    padding-inline: 35px;
+  @include onDesktop {
+    min-width: 70rem;
   }
 }
